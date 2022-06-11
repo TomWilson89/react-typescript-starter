@@ -1,0 +1,12 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "airbnb-typescript-prettier"],
+  "parserOptions": {
+    "project": "./tsconfig-eslint.json"
+  },
+  "ignorePatterns": ["webpack.*.js"],
+  "plugins": ["react", "prettier", "react-hooks"],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 140, "trailingComma": "all" }],
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  }
+}
